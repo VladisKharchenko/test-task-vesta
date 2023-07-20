@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .header__contacts {
+        display: flex;
+        max-width: 1175px;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 18px;
+      }
+      .header__location {
+        display: flex;
+        align-items: center;
+        margin-right: 233px;
+      }
+      .header__location-img {
+        width: 9.57px;
+        height: 13px;
+      }
+      .header__location-address {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #000000;
+        margin: 0 0 0 3px;
+      }
+      .header__location-address-geo {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: #4f4f4f;
+        text-decoration: none;
+      }
+      .header__location-address-geo:hover {
+        color: #4f4f4f;
+      }
+      .header__mail {
+        display: flex;
+        align-items: center;
+        margin-right: 325px;
+      }
+      .header__mail-img {
+        width: 14.22px;
+        height: 10px;
+      }
+      .header__mail-header {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #000000;
+        margin: 0 0 0 3px;
+      }
+      .header__mail-address {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: #4f4f4f;
+        text-decoration: none;
+      }
+      .header__mail-address:hover {
+        color: #4f4f4f;
+      }
+      .header__phone {
+        display: flex;
+        align-items: center;
+        margin-top: 9px;
+      }
+      .header__phone-img {
+        width: 17px;
+        height: 13px;
+      }
+      .header__phone-header {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #000000;
+        margin: 0 0 0 3px;
+      }
+      .header__phone-number {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        color: #4f4f4f;
+        text-decoration: none;
+      }
+      .header__phone-number:hover {
+        color: #4f4f4f;
+      }
+      .header__main-part {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1131px;
+        padding-top: 12px;
+      }
+      .header__logo-section {
+        margin-right: 114px;
+        text-align: center;
+      }
+      .header__main-logo {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: #013878;
+        text-transform: uppercase;
+      }
+      .header__under-logo {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 13px;
+        color: #4f4f4f;
+        text-transform: uppercase;
+        margin-left: 5px;
+      }
+      .header__navigation {
+        display: flex;
+        align-items: center;
+        margin-right: 366px;
+      }
+      .header__navigation-section {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 29px;
+      }
+      .header__navigation-part {
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+      }
+      .header__navigation-link:hover {
+        color: #585fd2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header__contacts">
+      <div class="header__location">
+        <img
+          src="./images/header-location-img.png"
+          class="header__location-img"
+          alt="Иконка метки"
+        />
+        <p class="header__location-address">
+          Адрес:
+          <a
+            href="geo:55.753930, 37.620795"
+            class="header__location-address-geo"
+            >г. Москва, ул. Примерная д.1</a
+          >
+        </p>
+      </div>
+      <div class="header__mail">
+        <img
+          src="./images/header-mail-img.png"
+          class="header__mail-img"
+          alt="Иконка почты"
+        />
+        <p class="header__mail-header">
+          Почта:
+          <a href="mailto:info@mail.ru" class="header__mail-address"
+            >info@mail.ru</a
+          >
+        </p>
+      </div>
+      <div class="header__phone">
+        <img
+          src="./images/header-phone-img.png"
+          class="header__phone-img"
+          alt="Иконка телефона"
+        />
+        <p class="header__phone-header">
+          Телефон:
+          <a href="mailto:info@mail.ru" class="header__phone-number"
+            >8 800 000 11 11</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="header__main-part">
+      <div class="header__logo-section">
+        <p class="header__main-logo">LOGOTYPE</p>
+        <p class="header__under-logo">ЭЛЕКТРОМОНТАЖНЫЕ РАБОТЫ</p>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__navigation-section">
+          <li class="header__navigation-part">
+            <a class="header__navigation-link">О компании</a>
+          </li>
+          <li class="header__navigation-part">
+            <a class="header__navigation-link">Каталог</a>
+          </li>
+          <li class="header__navigation-part">
+            <a class="header__navigation-link">Новости</a>
+          </li>
+        </ul>
+      </nav>
+      <button>Обратный звонок</button>
+    </div>
+  </body>
+</html>
