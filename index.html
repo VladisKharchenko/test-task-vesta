@@ -99,8 +99,9 @@
       .header__main-part {
         display: flex;
         margin: 0 auto;
-        max-width: 1131px;
+        max-width: 1138px;
         padding-top: 12px;
+        align-items: center;
       }
       .header__logo-section {
         margin-right: 114px;
@@ -139,8 +140,65 @@
         cursor: pointer;
         font-family: 'Roboto', sans-serif;
       }
-      .header__navigation-link:hover {
+      .header__navigation-part:hover {
         color: #585fd2;
+      }
+      .header__main-part-button {
+        width: 182px;
+        height: 49px;
+        color: #ffffff;
+        background-color: #ff4d00;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        border: none;
+      }
+      .benefits {
+        margin-top: 7px;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 52px;
+      }
+      .benefits__title {
+        margin: 0;
+        padding-top: 49px;
+        color: #000000;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-size: 36px;
+        letter-spacing: 1px;
+        padding-right: 31px;
+      }
+      .benefits__container {
+        display: flex;
+        margin-top: 51px;
+        gap: 30px;
+        padding-right: 38px;
+      }
+      .benefit {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .benefit__image {
+        width: 47px;
+        height: 47px;
+      }
+      .benefit__title {
+        font-family: 'Roboto', sans-serif;
+        margin: 25px 0 0 0;
+        text-align: center;
+        max-width: 250px;
+        letter-spacing: 1px;
+        font-size: 16px;
+      }
+      .benefit__text {
+        margin: 13px 0 0 0;
+        max-width: 269px;
+        text-align: center;
+        color: #828282;
       }
     </style>
   </head>
@@ -206,7 +264,69 @@
           </li>
         </ul>
       </nav>
-      <button>Обратный звонок</button>
+      <button class="header__main-part-button">Обратный звонок</button>
+    </div>
+    <div class="benefits">
+      <h1 class="benefits__title">ПРЕИМУЩЕСТВА НАШЕЙ ФИРМЫ</h1>
+      <div class="benefits__container">
+        <div class="benefit">
+          <img
+            src="./images/benefit-image1.png"
+            class="benefit__image"
+            alt="Значек напряжения обернутый кругом из проводов"
+          />
+          <h2 class="benefit__title">
+            БОЛЬШОЙ<br />
+            РАБОЧИЙ ОПЫТ
+          </h2>
+          <p class="benefit__text">
+            Опыт реализации проектов, с выполнением изысканий, проектирования,
+            строительно- монтажных и пусконаладочных работ
+          </p>
+        </div>
+        <div class="benefit">
+          <img
+            src="./images/benefit-image2.svg"
+            class="benefit__image"
+            alt="Диалоговое окно со звездой внутри"
+          />
+          <h2 class="benefit__title">
+            ПОЛОЖИТЕЬНАЯ<br />
+            ДЕЛОВАЯ РЕПУТАЦИЯ
+          </h2>
+          <p class="benefit__text">
+            Положительная деловая репутация, отсутствие судебных споров и
+            разбирательств
+          </p>
+        </div>
+        <div class="benefit">
+          <img
+            src="./images/benefit-image3.svg"
+            class="benefit__image"
+            alt="Строитель в каске"
+          />
+          <h2 class="benefit__title">КВАЛИФИЦИРОВАННЫЙ КАДРОВЫЙ СОСТАВ</h2>
+          <p class="benefit__text">
+            Квалифицированные кадры, отсутствие текучек персонала, отсутствие
+            задержек по оплате труда, официальное трудоустройство
+          </p>
+        </div>
+        <div class="benefit">
+          <img
+            src="./images/benefit-image4.svg"
+            class="benefit__image"
+            alt="Шестеренка со значком напряжения внутри"
+          />
+          <h2 class="benefit__title">
+            СЖАТЫЕ СРОКИ<br />
+            ПОСТАВОК ОБОРУДОВАНИЯ
+          </h2>
+          <p class="benefit__text">
+            Сотрудничаем с ведущими поставщиками электрооборудования
+            и материалов
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
